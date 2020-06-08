@@ -1,0 +1,16 @@
+{
+  "name": "mcrgenerator",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbmikaelian/mcrgenerator.git"
+  },
+  "author": "Garik Mikaelian",
+  "license": "ISC",
+  "dependencies": {}
+}
