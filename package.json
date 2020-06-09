@@ -1,10 +1,13 @@
 {
   "name": "mcrgenerator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "start": "node src/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gbmikaelian/mcrgenerator/issues"
   },
   "repository": {
     "type": "git",

@@ -1,12 +1,12 @@
 const fs = require('fs');
-const recursiveDirectory = require('./helpers/recursiveDirectory');
+const recursiveDirectory = require('mcrgenerator/src/helpers/recursiveDirectory');
 const path = require('path');
 
 
-const controller = require('./template/Controller');
-const rootController = require('./template/RootController');
-const model = require('./template/Model');
-const route = require('./template/Route');
+const controller = require('mcrgenerator/src/template/Controller');
+const rootController = require('mcrgenerator/src/template/RootController');
+const model = require('mcrgenerator/src/template/Model');
+const route = require('mcrgenerator/src/template/Route');
 
 
 const absPath = path.join(__dirname, '../../../')
@@ -23,5 +23,5 @@ fs.writeFileSync(`${absPath}src/controllers/Controller.js`, rootController);
 fs.writeFileSync(`${absPath}src/models/${nameCapitalized}.js`, model);
 fs.writeFileSync(`${absPath}src/routes/${nameCapitalized}.js`, route);
 
-const initRoutes = require('./template/initRoutes');
+const initRoutes = require('mcrgenerator/src/template/initRoutes');
 fs.writeFileSync(absPath+'src/routes/initRoutes.js', initRoutes);
