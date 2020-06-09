@@ -1,8 +1,8 @@
 const fs = require('fs');
 const absPath = require('mcrgenerator/src/helpers/absPath')
+const path = require('path')
 
-
-const files = fs.readdirSync(absPath)
+const files = fs.readdirSync(path.join(absPath, 'src/routes'))
 
 let imports = ''
 let appRoutes = ''
